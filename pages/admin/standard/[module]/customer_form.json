@@ -1,0 +1,171 @@
+{
+  "tabs": [
+    {
+      "key": "general",
+      "label": "General"
+    },
+    {
+      "key": "permanent_address",
+      "label": "Permanent Address"
+    },
+    {
+      "key": "id_info",
+      "label": "ID Info",
+      "multi": true
+    },
+    {
+      "key": "images",
+      "label": "Images"
+    },
+    {
+      "key": "news",
+      "label": "News"
+    },
+    {
+      "key": "maps",
+      "label": "Maps"
+    },
+    {
+      "key": "books",
+      "label": "Books"
+    },
+    {
+      "key": "flights",
+      "label": "Flights"
+    },
+    {
+      "key": "apps",
+      "label": "Apps"
+    }
+  ],
+  "general": [
+    [
+      {
+        "key": "first_name",
+        "label": "First Name",
+        "type": "text",
+        "value": "",
+        "pk": "general_first_name"
+      },
+      {
+        "key": "image",
+        "label": "KK Name",
+        "type": "image",
+        "value": "",
+        "pk": "general_first_name"
+      },
+      {
+        "key": "last_name",
+        "label": "Last Name",
+        "type": "text",
+        "value": "",
+        "pk": "general_last_name"
+      },
+      {
+        "key": "gender",
+        "label": "Gender",
+        "type": "select",
+        "value": "",
+        "items": [
+          {
+            "key": "",
+            "label": "--None--"
+          },
+          {
+            "key": "M",
+            "label": "Male"
+          },
+          {
+            "key": "F",
+            "label": "Female"
+          }
+        ]
+      },
+      {
+        "key": "date_of_birth",
+        "label": "Date of Birth",
+        "type": "select",
+        "value": "",
+        "items": []
+      }
+    ]
+  ],
+  "permanent_address": [
+    [
+      {
+        "key": "permanent_province",
+        "label": "Province",
+        "type": "select",
+        "value": "",
+        "items": [],
+        "action": {
+          "remote_to": {
+            "url": "api url",
+            "min_key": 2,
+            "param": []
+          },
+          "other_event": [
+            {
+              "event": "on change",
+              "url": "api url",
+              "param": []
+            }
+          ]
+        }
+      },
+      {
+        "key": "permanent_district",
+        "label": "District",
+        "type": "select",
+        "value": "",
+        "items": []
+      },
+      {
+        "key": "permanent_commune",
+        "label": "Commune",
+        "type": "select",
+        "value": "",
+        "items": []
+      },
+      {
+        "key": "permanent_village",
+        "label": "Village",
+        "type": "select",
+        "value": "",
+        "items": []
+      }
+    ]
+  ],
+  "id_info": [
+    [
+      {
+        "key": "id_number",
+        "label": "ID Number",
+        "type": "text",
+        "value": "",
+        "pk": "id_info_id_number"
+      },
+      {
+        "key": "issue_place",
+        "label": "Issue Place",
+        "type": "select",
+        "value": "",
+        "items": []
+      },
+      {
+        "key": "issue_date",
+        "label": "Issue Date",
+        "type": "select",
+        "value": "",
+        "items": []
+      },
+      {
+        "key": "expired_date",
+        "label": "Expired Date",
+        "type": "select",
+        "value": "",
+        "items": []
+      }
+    ]
+  ]
+}

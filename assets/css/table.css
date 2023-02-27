@@ -1,0 +1,13 @@
+.table-header{
+    font-size: 0.8125rem;
+    font-weight: 600 !important;
+    letter-spacing: normal;
+    line-height: 1rem;
+
+}
+.table-body {
+    font-size: 0.8125rem;
+    font-weight: 500 !important;
+    letter-spacing: normal;
+    line-height: 1rem;
+}

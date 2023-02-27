@@ -1,0 +1,135 @@
+{
+  "tabs": [
+    {
+      "key": "general",
+      "label": "General"
+    },
+    {
+      "key": "permanent_address",
+      "label": "Permanent Address"
+    },
+    {
+      "key": "id_info",
+      "label": "ID Info",
+      "multi": true
+    },
+    {
+      "key": "images",
+      "label": "Images"
+    },
+    {
+      "key": "news",
+      "label": "News"
+    },
+    {
+      "key": "maps",
+      "label": "Maps"
+    },
+    {
+      "key": "books",
+      "label": "Books"
+    },
+    {
+      "key": "flights",
+      "label": "Flights"
+    },
+    {
+      "key": "apps",
+      "label": "Apps"
+    }
+  ],
+  "general": [
+    [
+      {
+        "key": "first_name",
+        "label": "First Name",
+        "type": "text"
+      },
+      {
+        "key": "last_name",
+        "label": "Last Name",
+        "type": "text"
+      },
+      {
+        "key": "gender",
+        "label": "Gender",
+        "type": "select",
+        "items": [
+          {
+            "key": "",
+            "label": "--None--"
+          },
+          {
+            "key": "M",
+            "label": "Male"
+          },
+          {
+            "key": "F",
+            "label": "Female"
+          }
+        ]
+      },
+      {
+        "key": "date_of_birth",
+        "label": "Date of Birth",
+        "type": "select",
+        "items": []
+      }
+    ]
+  ],
+  "permanent_address": [
+    [
+      {
+        "key": "permanent_province",
+        "label": "Province",
+        "type": "select",
+        "items": []
+      },
+      {
+        "key": "permanent_district",
+        "label": "District",
+        "type": "select",
+        "items": []
+      },
+      {
+        "key": "permanent_commune",
+        "label": "Commune",
+        "type": "select",
+        "items": []
+      },
+      {
+        "key": "permanent_village",
+        "label": "Village",
+        "type": "select",
+        "items": []
+      }
+    ]
+  ],
+  "id_info": [
+    [
+      {
+        "key": "id_number",
+        "label": "ID Number",
+        "type": "text"
+      },
+      {
+        "key": "issue_place",
+        "label": "Issue Place",
+        "type": "select",
+        "items": []
+      },
+      {
+        "key": "issue_date",
+        "label": "Issue Date",
+        "type": "select",
+        "items": []
+      },
+      {
+        "key": "expired_date",
+        "label": "Expired Date",
+        "type": "select",
+        "items": []
+      }
+    ]
+  ]
+}

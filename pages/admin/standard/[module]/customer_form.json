@@ -48,10 +48,14 @@
         "pk": "general_first_name"
       },
       {
-        "key": "image",
-        "label": "KK Name",
+        "key": "img_name",
+        "label": "Img Name",
         "type": "image",
-        "value": "",
+        "value": [],
+        "img_name": "",
+        "img_size": "",
+        "img_type": "",
+        "value_base64": "",
         "pk": "general_first_name"
       },
       {

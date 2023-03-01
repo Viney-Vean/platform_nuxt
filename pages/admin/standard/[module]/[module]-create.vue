@@ -57,6 +57,7 @@
                   v-else-if="itemField.type === 'image'"
                   :label="itemField.label"
                   v-model="itemField.value"
+                  @change="convertImgToBase64(itemField)"
                   accept="image/png, image/jpeg, image/bmp"
                   prepend-icon="mdi-camera"
                   density="compact"
@@ -139,6 +140,25 @@ export default {
     },
     isShowBtnAddNewTabRow(tabItem, indexTabItemRow) {
       return this.getTabRowLength(tabItem) === (indexTabItemRow + 1)
+    },
+    convertImgToBase64(fieldObj) {
+      console.log("======> convertImgToBase64: ", fieldObj.value)
+      const imgFile = fieldObj.value[0]
+      const reader = new FileReader()
+      let rawImg;
+      reader.onloadend = () => {
+        rawImg = reader.result;
+        fieldObj.img_name = rawImg.name
+        fieldObj.img_size = rawImg.size
+        fieldObj.img_type = rawImg.type
+        console.log("===>>> name: ", rawImg.name);
+        console.log("rawImg: ", rawImg);
+      }
+      reader.readAsDataURL(imgFile);
+      fieldObj.value_base64 = imgFile
+      console.log("imgFile: ", imgFile)
+      console.log("kkk----> ")
+      console.log(fieldObj)
     },
     saveData() {
       for (const item in this.formInfo) {

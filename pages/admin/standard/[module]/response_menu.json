@@ -1,0 +1,52 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "value": 1,
+      "label": "Dashboard",
+      "url": "/dashboard"
+    },
+    {
+      "value": 2,
+      "label": "Customer",
+      "url": "/admin/standard/customer/customer-create"
+    },
+    {
+      "value": 3,
+      "label": "CRM",
+      "children": [
+        {
+          "value": 4,
+          "label": "Lead",
+          "url": "/admin/standard/lead/lead-create"
+        },
+        {
+          "value": 5,
+          "label": "Deal",
+          "url": "/admin/standard/deal/deal-create"
+        }
+      ]
+    },
+    {
+      "value": 6,
+      "label": "Users",
+      "children": [
+        {
+          "value": 7,
+          "label": "User",
+          "url": "/admin/standard/user/user-create"
+        },
+        {
+          "value": 8,
+          "label": "Role",
+          "url": "/admin/standard/role/role-create"
+        },
+        {
+          "value": 9,
+          "label": "Permission",
+          "url": "/admin/standard/permission/permission-create"
+        }
+      ]
+    }
+  ]
+}

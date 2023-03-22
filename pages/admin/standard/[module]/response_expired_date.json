@@ -1,0 +1,21 @@
+{
+  "status": 200,
+  "data": {
+    "reset_to_fields": [],
+    "set_value_to_fields": {
+      "issue_date": {
+        "msg_errs": [
+          {
+            "type": "warning",
+            "msg": "The issue date must not greater than today!"
+          },
+          {
+            "type": "info",
+            "msg": "You can input issue base on the valid document."
+          }
+        ],
+        "data": []
+      }
+    }
+  }
+}

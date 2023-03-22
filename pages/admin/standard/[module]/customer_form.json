@@ -12,30 +12,6 @@
       "key": "id_info",
       "label": "ID Info",
       "multi": true
-    },
-    {
-      "key": "images",
-      "label": "Images"
-    },
-    {
-      "key": "news",
-      "label": "News"
-    },
-    {
-      "key": "maps",
-      "label": "Maps"
-    },
-    {
-      "key": "books",
-      "label": "Books"
-    },
-    {
-      "key": "flights",
-      "label": "Flights"
-    },
-    {
-      "key": "apps",
-      "label": "Apps"
     }
   ],
   "general": [
@@ -44,26 +20,13 @@
         "key": "first_name",
         "label": "First Name",
         "type": "text",
-        "value": "",
-        "pk": "general_first_name"
-      },
-      {
-        "key": "img_name",
-        "label": "Img Name",
-        "type": "image",
-        "value": [],
-        "img_name": "",
-        "img_size": "",
-        "img_type": "",
-        "value_base64": "",
-        "pk": "general_first_name"
+        "value": ""
       },
       {
         "key": "last_name",
         "label": "Last Name",
         "type": "text",
-        "value": "",
-        "pk": "general_last_name"
+        "value": ""
       },
       {
         "key": "gender",
@@ -83,7 +46,16 @@
             "key": "F",
             "label": "Female"
           }
-        ]
+        ],
+        "action": {
+          "other_event": [
+            {
+              "event": "on change",
+              "url": "api url",
+              "param": []
+            }
+          ]
+        }
       },
       {
         "key": "date_of_birth",
@@ -91,6 +63,16 @@
         "type": "select",
         "value": "",
         "items": []
+      },
+      {
+        "key": "profile_photo",
+        "label": "Profile Photo",
+        "type": "image",
+        "value": [],
+        "img_name": "",
+        "img_size": "",
+        "img_type": "",
+        "value_base64": ""
       }
     ]
   ],
@@ -112,7 +94,9 @@
             {
               "event": "on change",
               "url": "api url",
-              "param": []
+              "param": [
+                "permanent_province"
+              ]
             }
           ]
         }
@@ -122,21 +106,66 @@
         "label": "District",
         "type": "select",
         "value": "",
-        "items": []
+        "items": [],
+        "action": {
+          "remote_to": {
+            "url": "api url",
+            "min_key": 2,
+            "param": [
+              "permanent_province"
+            ]
+          },
+          "other_event": [
+            {
+              "event": "on change",
+              "url": "api url",
+              "param": [
+                "permanent_district"
+              ]
+            }
+          ]
+        }
       },
       {
         "key": "permanent_commune",
         "label": "Commune",
         "type": "select",
         "value": "",
-        "items": []
+        "items": [],
+        "action": {
+          "remote_to": {
+            "url": "api url",
+            "min_key": 2,
+            "param": [
+              "permanent_district"
+            ]
+          },
+          "other_event": [
+            {
+              "event": "on change",
+              "url": "api url",
+              "param": [
+                "permanent_commune"
+              ]
+            }
+          ]
+        }
       },
       {
         "key": "permanent_village",
         "label": "Village",
         "type": "select",
         "value": "",
-        "items": []
+        "items": [],
+        "action": {
+          "remote_to": {
+            "url": "api url",
+            "min_key": 2,
+            "param": [
+              "permanent_commune"
+            ]
+          }
+        }
       }
     ]
   ],
@@ -147,7 +176,7 @@
         "label": "ID Number",
         "type": "text",
         "value": "",
-        "pk": "id_info_id_number"
+        "pk": "id_number"
       },
       {
         "key": "issue_place",
@@ -161,14 +190,36 @@
         "label": "Issue Date",
         "type": "select",
         "value": "",
-        "items": []
+        "items": [],
+        "action": {
+          "other_event": [
+            {
+              "event": "on change",
+              "url": "api url",
+              "param": [
+                "issue_date"
+              ]
+            }
+          ]
+        }
       },
       {
         "key": "expired_date",
         "label": "Expired Date",
         "type": "select",
         "value": "",
-        "items": []
+        "items": [],
+        "action": {
+          "other_event": [
+            {
+              "event": "on change",
+              "url": "api url",
+              "param": [
+                "expired_date"
+              ]
+            }
+          ]
+        }
       }
     ]
   ]

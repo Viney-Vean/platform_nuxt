@@ -1,0 +1,23 @@
+{
+  "status": 200,
+  "data": {
+    "reset_to_fields": [
+      "permanent_village"
+    ],
+    "set_value_to_fields": {
+      "permanent_village": {
+        "msg_errs": [],
+        "data": [
+          {
+            "value": 1,
+            "label": "Village Name 1"
+          },
+          {
+            "value": 2,
+            "label": "Village Name 2"
+          }
+        ]
+      }
+    }
+  }
+}

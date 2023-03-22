@@ -1,0 +1,21 @@
+{
+  "status": 200,
+  "data": {
+    "reset_to_fields": ["permanent_district"],
+    "set_value_to_fields": {
+      "permanent_district": {
+        "msg_errs": [],
+        "data": [
+          {
+            "value": 1,
+            "label": "District Name 1"
+          },
+          {
+            "value": 2,
+            "label": "District Name 2"
+          }
+        ]
+      }
+    }
+  }
+}

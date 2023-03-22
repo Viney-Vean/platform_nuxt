@@ -1,0 +1,17 @@
+{
+  "status": 200,
+  "data": {
+    "reset_to_fields": [],
+    "set_value_to_fields": {
+      "expired_date": {
+        "msg_errs": [
+          {
+            "type": "info",
+            "msg": "You can input expired date base on the valid document."
+          }
+        ],
+        "data": []
+      }
+    }
+  }
+}

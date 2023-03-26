@@ -1,0 +1,94 @@
+[
+  {
+    "parent_id": 15,
+    "label": "Chamkar Mon"
+  },
+  {
+    "parent_id": 15,
+    "label": "Daun Penh"
+  },
+  {
+    "parent_id": 15,
+    "label": "Prampi Makara"
+  },
+  {
+    "parent_id": 15,
+    "label": "Tuol Kouk"
+  },
+  {
+    "parent_id": 15,
+    "label": "Boeung Keng Kang"
+  },
+  {
+    "parent_id": 15,
+    "label": "Russey Keo"
+  },
+  {
+    "parent_id": 15,
+    "label": "Sen Sok"
+  },
+  {
+    "parent_id": 15,
+    "label": "Mean Chey"
+  },
+  {
+    "parent_id": 15,
+    "label": "Chroy Changvar"
+  },
+  {
+    "parent_id": 15,
+    "label": "Dangkao"
+  },
+  {
+    "parent_id": 15,
+    "label": "Prek Pnov"
+  },
+  {
+    "parent_id": 15,
+    "label": "Por Sen Chey"
+  },
+  {
+    "parent_id": 15,
+    "label": "Chbar Ampov"
+  },
+  {
+    "parent_id": 15,
+    "label": "Kamboul"
+  },
+  {
+    "parent_id": 1,
+    "label": "Mongkol Borei"
+  },
+  {
+    "parent_id": 1,
+    "label": "Ou Chrov"
+  },
+  {
+    "parent_id": 1,
+    "label": "Thma Puok"
+  },
+  {
+    "parent_id": 1,
+    "label": "Poipet"
+  },
+  {
+    "parent_id": 1,
+    "label": "Sisophon"
+  },
+  {
+    "parent_id": 1,
+    "label": "Malai"
+  },
+  {
+    "parent_id": 1,
+    "label": "Svay Chek"
+  },
+  {
+    "parent_id": 1,
+    "label": "Preah Netr Preah"
+  },
+  {
+    "parent_id": 1,
+    "label": "Phnom Srok"
+  }
+]

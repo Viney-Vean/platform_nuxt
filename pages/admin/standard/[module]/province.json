@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "label": "Banteay Meanchey"
+  },
+  {
+    "id": 2,
+    "label": "Battambang"
+  },
+  {
+    "id": 3,
+    "label": "Kampong Cham"
+  },
+  {
+    "id": 4,
+    "label": "Kampong Chhnang"
+  },
+  {
+    "id": 5,
+    "label": "Kampong Speu"
+  },
+  {
+    "id": 6,
+    "label": "Kampong Thom"
+  },
+  {
+    "id": 7,
+    "label": "Kampot"
+  },
+  {
+    "id": 8,
+    "label": "Kandal"
+  },
+  {
+    "id": 9,
+    "label": "Kep"
+  },
+  {
+    "id": 10,
+    "label": "Koh Kong"
+  },
+  {
+    "id": 11,
+    "label": "Kratie"
+  },
+  {
+    "id": 12,
+    "label": "Mondulkiri"
+  },
+  {
+    "id": 13,
+    "label": "Oddar Meanchey"
+  },
+  {
+    "id": 14,
+    "label": "Pailin"
+  },
+  {
+    "id": 15,
+    "label": "Phnom Penh (autonomous city)"
+  },
+  {
+    "id": 16,
+    "label": "Preah Sihanouk"
+  },
+  {
+    "id": 17,
+    "label": "Preah Vihear"
+  },
+  {
+    "id": 18,
+    "label": "Prey Veng"
+  },
+  {
+    "id": 19,
+    "label": "Pursat"
+  },
+  {
+    "id": 20,
+    "label": "Ratanakiri"
+  },
+  {
+    "id": 21,
+    "label": "Siem Reap"
+  },
+  {
+    "id": 22,
+    "label": "Stung Treng"
+  },
+  {
+    "id": 23,
+    "label": "Svay Rieng"
+  },
+  {
+    "id": 24,
+    "label": "Takeo"
+  },
+  {
+    "id": 25,
+    "label": "Tbong Khmum"
+  }
+]

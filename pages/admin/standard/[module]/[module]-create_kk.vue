@@ -30,40 +30,55 @@
               class="border-b-md "
               v-for="(tabFields, indexTabFields) in prepareFormData[tabItem.key]"
           >
-            {{tabFields}}
-
-            <v-col
+            <template v-if="indexItem !== 1">
+              <v-col
                 cols="12" md="6"
                 v-for="(itemField, indexItemField) in tabFields"
                 :key="itemField.key"
                 :value="itemField.value"
-            >
-
-              <v-card-text
-                  class="pa-0"
-                  v-if="itemField.type === 'text'">
-                <v-text-field
+              >
+                <v-card-text
+                    class="pa-0"
+                    v-if="itemField.type === 'text'">
+                  <v-text-field
+                      :label="itemField.label"
+                      v-model="itemField.value"
+                      v-bind:name="tabItem.key + '-' + indexTabFields +'-' + itemField.key"
+                      v-bind:id="'id' + tabItem.key + '-' + indexTabFields +'-' + itemField.key"
+                      color="indigo"
+                      density="compact"
+                      variant="outlined"
+                      hide-details
+                  ></v-text-field>
+                </v-card-text>
+                  <v-autocomplete
+                    v-if="itemField.type === 'select'"
                     :label="itemField.label"
-                    v-model="itemField.value"
-                    v-bind:name="tabItem.key + '-' + indexTabFields +'-' + itemField.key"
-                    v-bind:id="'id' + tabItem.key + '-' + indexTabFields +'-' + itemField.key"
+                    :items="[]"
+                    item-title="text"
+                    item-value="id"
                     color="indigo"
                     density="compact"
                     variant="outlined"
                     hide-details
-                ></v-text-field>
-              </v-card-text>
-              <v-autocomplete
-                  v-else-if="itemField.type === 'select'"
-                  :label="itemField.label"
-                  :items="[]"
-                  item-title="text"
-                  item-value="id"
-                  color="indigo"
-                  density="compact"
-                  variant="outlined"
-                  hide-details
-              ></v-autocomplete>
+                  ></v-autocomplete>
+              </v-col>
+            </template>
+            <template v-else>
+              <PermanentAddress/>
+            </template>
+            <v-col
+                cols="12" md="12"
+                class="ma-0 pt-0"
+                v-if="tabItem.key === 'general'"
+            >
+              <file-pond
+                  name="test"
+                  ref="pond"
+                  label-idle="Drop files here..."
+                  v-bind:allow-multiple="true"
+                  accepted-file-types="image/jpeg, image/png"
+              />
             </v-col>
             <v-col
                 cols="12" md="12"
@@ -99,10 +114,19 @@
 <script>
 import customerFormFields from './customer_form.json'
 import {da} from "vuetify/locale";
+import vueFilePond from "vue-filepond";
+import "filepond/dist/filepond.min.css";
+import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css";
+import FilePondPluginFileValidateType from "filepond-plugin-file-validate-type";
+import FilePondPluginImagePreview from "filepond-plugin-image-preview";
+import PermanentAddress from "@/components/permanent_address";
 
 export default {
+  components: {
+    FilePond: vueFilePond(FilePondPluginFileValidateType, FilePondPluginImagePreview),
+    PermanentAddress
+  },
   name: "[module]-create",
-
 
   data: () => ({
     currentItem: 'tab-Web',
